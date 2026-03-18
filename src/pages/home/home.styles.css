@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .home-hero {
+    @apply relative overflow-hidden bg-gradient-to-br from-primary/10 via-background to-accent/5 py-20 sm:py-28;
+  }
+
+  .home-hero-pattern {
+    @apply absolute inset-0 opacity-[0.03];
+  }
+
+  .home-hero-badge {
+    @apply inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary mb-6 animate-fade-in;
+  }
+
+  .home-hero-title {
+    @apply text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl animate-fade-in;
+  }
+
+  .home-hero-title-accent {
+    @apply block text-primary mt-2;
+  }
+
+  .home-hero-subtitle {
+    @apply mx-auto mt-6 max-w-2xl text-lg text-muted-foreground animate-fade-in;
+  }
+
+  .home-hero-ctas {
+    @apply mt-8 flex flex-wrap justify-center gap-4 animate-fade-in;
+  }
+
+  .home-cta-primary {
+    @apply inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-lg transition-all hover:bg-primary/90 hover:shadow-xl hover:-translate-y-0.5;
+  }
+
+  .home-cta-secondary {
+    @apply inline-flex items-center gap-2 rounded-lg bg-card px-6 py-3 text-sm font-semibold text-foreground shadow-md border border-border transition-all hover:shadow-lg hover:-translate-y-0.5;
+  }
+
+  .home-tools {
+    @apply py-16 sm:py-20 bg-muted/30;
+  }
+
+  .home-section-title {
+    @apply text-2xl font-bold text-foreground sm:text-3xl;
+  }
+
+  .home-section-subtitle {
+    @apply mt-3 text-muted-foreground max-w-2xl mx-auto;
+  }
+
+  .home-features {
+    @apply py-16 sm:py-20;
+  }
+
+  .home-feature-card {
+    @apply text-center p-6 rounded-2xl bg-card border border-border/50 shadow-sm hover:shadow-md transition-shadow;
+  }
+
+  .home-feature-icon {
+    @apply inline-flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 mb-4;
+  }
+
+  .home-about {
+    @apply py-16 sm:py-20 bg-primary/5 border-y border-border;
+  }
+
+  .home-trust {
+    @apply py-12 bg-primary/5 border-y border-border;
+  }
+
+  .home-trust-row {
+    @apply flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 text-center;
+  }
+
+  .home-trust-item {
+    @apply flex items-center gap-2 text-sm font-medium text-foreground;
+  }
+}
